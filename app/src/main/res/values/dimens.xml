@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="home_screen_edittext_width">295dp</dimen>
+    <dimen name="home_screen_edittext_height">40dp</dimen>
+    <dimen name="home_screen_edittext_marginTop">168dp</dimen>
+
+    <dimen name="activity_main_edittext_textSize">12sp</dimen>
+
+    <dimen name="activity_search_logo_size">40dp</dimen>
+    <dimen name="activity_search_logo_marginTop">32dp</dimen>
+    <dimen name="activity_search_sideBar_width">16dp</dimen>
+    <dimen name="activity_search_header_height">52dp</dimen>
+    <dimen name="activity_search_header_textSize">24sp</dimen>
+
+    <dimen name="course_screen_height">550dp</dimen>
+    <dimen name="course_screen_header_text_size">28sp</dimen>
+    <dimen name="course_screen_desc_text_size">16sp</dimen>
+    <dimen name="deals_screen_header_text_size">28sp</dimen>
+    <dimen name="deals_screen_desc_text_size">16sp</dimen>
+    <dimen name="world_screen_header_text_size">28sp</dimen>
+    <dimen name="world_screen_desc_text_size">16sp</dimen>
+
+    <dimen name="world_screen_bottom_bar_height">53dp</dimen>
+
+</resources>

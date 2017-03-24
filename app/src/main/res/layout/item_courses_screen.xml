@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/course_screen_height"
+    android:background="@color/course_screen_bg_color">
+
+    <TextView
+        android:id="@+id/course_screen_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        style="@style/CoursesHeader"
+        android:text="@string/course_screen_header_text"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/course_screen_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CoursesDesc"
+        android:layout_marginTop="6dp"
+        android:text="@string/course_screen_desc_text"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/courses_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

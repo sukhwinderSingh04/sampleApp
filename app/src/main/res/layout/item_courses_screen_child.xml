@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/course_screen_topImage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/courses_wallpaper"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/course_screen_favImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/icon_fav_course_inactive"/>
+
+    <ImageView
+        android:id="@+id/course_screen_priceImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/course_screen_favImg"
+        android:src="@drawable/icon_price_alert_active"/>
+
+    <TextView
+        android:id="@+id/course_screen_teeRate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:text="Tee Times From"
+        android:textSize="14sp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/course_screen_teeRates_parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/course_screen_teeRate_label"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/course_screen_rates_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="$"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:gravity="top"/>
+        <TextView
+            android:id="@+id/course_screen_rates_dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textColor="#ffffff"
+            android:text="216"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:layout_gravity="start"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/course_screen_rates_cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="55"
+            android:textStyle="bold"
+            android:gravity="top"
+            android:layout_gravity="top"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_screen_discount_parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/course_screen_discout_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:text="UP TO"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/course_screen_discount_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="42%"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/course_screen_discout_labeL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:text="OFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/course_screen_courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_below="@id/course_screen_topImage"
+        android:layout_marginTop="19dp"
+        android:text="Grand Coryl Golf Riviera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginRight="15.3dp"
+        android:textStyle="bold"
+        android:textColor="#0f143c"/>
+
+    <TextView
+        android:id="@+id/course_screen_courseAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/course_screen_courseName"
+        android:layout_marginTop="4dp"
+        android:text="KM 294-700 Carretera Federal 307,Playa del Carmen, z-MEXICO 77710"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginRight="15.3dp"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/course_screen_teeTimes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/course_screen_courseAddress"
+        android:layout_marginTop="36dp"
+        android:text="AVAILABLE TEE TIMES"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginRight="15.3dp"
+        android:textColor="#3d5591"
+        />
+
+    <LinearLayout
+        android:id="@+id/course_screen_teeTime_parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/course_screen_teeTimes_label"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/course_screen_teeTime_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0f143c"
+            android:text="10:45"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/course_screen_startPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#0f143c"
+            android:text="AM"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"/>
+        <TextView
+            android:id="@+id/course_screen_PeriodDevider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0f143c"
+            android:text="-"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/course_screen_teeTime_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0f143c"
+            android:text="5:45"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/course_screen_endPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#0f143c"
+            android:text="PM"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15.3dp"
+        android:layout_marginRight="15.3dp"
+        android:layout_below="@id/course_screen_teeTime_parentLayout"
+        android:background="#f68a1f"
+        android:layout_marginTop="5dp"
+        android:text="VIEW TEE TIMES"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="course_screen_bg_color">#f9f9f9</color>
+    <color name="course_screen_header_color">#0f143c</color>
+    <color name="course_screen_desc_color">#3d5591</color>
+    <color name="deals_screen_header_color">#0f143c</color>
+    <color name="deals_screen_desc_color">#3d5591</color>
+    <color name="world_screen_header_color">#0f143c</color>
+    <color name="world_screen_desc_color">#3d5591</color>
+
+    <color name="world_screen_bottom_bar_bg_color">#b3000000</color>
+
+</resources>

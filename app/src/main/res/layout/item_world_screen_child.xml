@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/world_screen_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_tokyo"
+        android:scaleType="fitXY"/>
+    
+    <ImageView
+        android:id="@+id/world_screen_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/world_screen_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/world_screen_bottom_bar_bg_color"/>
+    
+    <TextView
+        android:id="@+id/world_screen_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17.6dp"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentBottom="true"
+        android:text="Japan"
+        android:textColor="#fbaf19"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/world_screen_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.4dp"
+        android:layout_above="@id/world_screen_country"
+        android:text="Tokyo,"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/world_screen_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/icon_arrow_left_white"
+        android:rotation="180"/>
+
+
+</RelativeLayout>

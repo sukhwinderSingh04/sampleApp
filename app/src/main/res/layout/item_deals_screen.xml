@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="#f9f9f9">
+
+    <TextView
+        android:id="@+id/deals_screen_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        style="@style/DealsHeader"
+        android:text="@string/deals_screen_header_text"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/deals_screen_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        style="@style/DealsDesc"
+        android:text="@string/deals_screen_desc_text"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/deals_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.supremeGolf.app.ui.activity.MainActivity"
+    android:background="@drawable/homepage">
+    
+    <ImageView
+        android:id="@+id/home_screen_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/s_g_logo"
+        android:focusable="true"/>
+
+    <EditText
+        android:id="@+id/home_searchText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_screen_edittext_height"
+        android:layout_marginTop="168dp"
+        android:textSize="@dimen/activity_main_edittext_textSize"
+        android:textColor="#333333"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="12dp"
+        android:hint="@string/home_screen_editText_hint"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="33dp"
+        android:paddingLeft="12dp"
+        android:clickable="false"
+        android:singleLine="true"
+        android:textColorHint="#333333"
+        />
+    
+    <LinearLayout
+        android:id="@+id/home_optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="41"
+        android:orientation="horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="33dp"
+        android:layout_below="@id/home_searchText"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/home_screen_calender_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@android:color/white"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/home_screen_calenderIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/reservations_inactive"/>
+
+            <TextView
+                android:id="@+id/home_screen_calenderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:text="Today"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/home_screen_playerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/shape"/>
+
+            <TextView
+                android:id="@+id/home_screen_playerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:text="All Players"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/home_searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_screen_edittext_height"
+        android:layout_below="@id/home_optionsLayout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="8dp"
+        android:background="#f68a1f"
+        android:focusable="true"
+        android:text="@string/home_screen_Search_button"
+        android:textColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/home_screen_weatherLayout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/home_searchButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="112dp">
+
+        <ImageView
+            android:id="@+id/home_screen_weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/partly_cloudy"/>
+
+        <TextView
+            android:id="@+id/home_screen_weatherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/home_screen_weather_icon"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="PARTLY CLOUDY"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/home_screen_tempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="60sp"
+            android:text="95"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/home_screen_weather_upperIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/page_1"/>
+
+        <TextView
+            android:id="@+id/home_screen_weather_upperText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/home_screen_weather_upperIcon"
+            android:textSize="16sp"
+            android:text="105"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/home_screen_weather_downIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_screen_weather_upperIcon"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="105dp"
+            android:src="@drawable/page_2"/>
+
+        <TextView
+            android:id="@+id/home_screen_weather_downText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/home_screen_weather_downIcon"
+            android:layout_below="@id/home_screen_weather_upperText"
+            android:text="72"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/home_screen_locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="Albuequerque New Mexico"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="21dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home_screen_bottom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_searchButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_arrow_left_white"
+        android:layout_marginTop="250dp"
+        android:rotation="270"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SGapp_android</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_screen_editText_hint">Any course nearby</string>
+    <string name="home_screen_Search_button">Search</string>
+
+    <string name="activity_search_editText_hint">Any course near me</string>
+    <string name="activity_search_label">(Search by city, Course or Zip Code)</string>
+    <string name="activity_search_header">Courses Nearby</string>
+    <string name="course_screen_header_text">Featured Courses</string>
+    <string name="course_screen_desc_text">These courses are worth checking out.</string>
+    <string name="deals_screen_header_text">Today\'s Top Deals</string>
+    <string name="deals_screen_desc_text">Here are some great deals near you.</string>
+    <string name="world_screen_header_text">Explore the World</string>
+    <string name="world_screen_desc_text">Play the best courses worldwide.</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CoursesHeader">
+        <item name="android:textColor">@color/course_screen_header_color</item>
+        <item name="android:textSize">@dimen/course_screen_header_text_size</item>
+    </style>
+
+    <style name="CoursesDesc">
+        <item name="android:textColor">@color/course_screen_desc_color</item>
+        <item name="android:textSize">@dimen/course_screen_desc_text_size</item>
+    </style>
+
+    <style name="DealsHeader">
+        <item name="android:textColor">@color/deals_screen_header_color</item>
+        <item name="android:textSize">@dimen/deals_screen_header_text_size</item>
+    </style>
+
+    <style name="DealsDesc">
+        <item name="android:textColor">@color/deals_screen_desc_color</item>
+        <item name="android:textSize">@dimen/deals_screen_desc_text_size</item>
+    </style>
+
+    <style name="WorldHeader">
+        <item name="android:textColor">@color/world_screen_header_color</item>
+        <item name="android:textSize">@dimen/world_screen_header_text_size</item>
+    </style>
+
+    <style name="WorldDesc">
+        <item name="android:textColor">@color/world_screen_desc_color</item>
+        <item name="android:textSize">@dimen/world_screen_desc_text_size</item>
+    </style>
+
+</resources>
